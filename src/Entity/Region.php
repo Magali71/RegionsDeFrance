@@ -14,7 +14,7 @@ class Region
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
-    private ?string $Code = null;
+    private ?string $code = null;
 
     #[ORM\Column(length: 255)]
     private ?string $nom = null;
@@ -26,12 +26,12 @@ class Region
 
     public function getCode(): ?string
     {
-        return $this->Code;
+        return $this->code;
     }
 
-    public function setCode(string $Code): self
+    public function setCode(string $code): self
     {
-        $this->Code = $Code;
+        $this->code = $code;
 
         return $this;
     }
